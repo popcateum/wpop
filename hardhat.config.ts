@@ -7,27 +7,13 @@ import { HardhatUserConfig } from "hardhat/types";
 const config: HardhatUserConfig = {
   solidity: {
     version: "0.8.5",
-    settings: {
-      optimizer: {
-        enabled: true,
-        runs: 200,
-      },
-    },
   },
   networks: {
-    rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
+    popcateum: {
+      url: "https://dataseed.popcateum.org",
       accounts: [process.env.ADMIN || ''],
-      chainId: 4,
+      chainId: 1213,
     },
-    kovan: {
-      url: `https://kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
-      accounts: [process.env.ADMIN || ''],
-      chainId: 42,
-    },
-  },
-  etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY
   },
 };
 
