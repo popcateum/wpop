@@ -2,4 +2,4 @@
 This repository has the contracts that implement the wrapped pop token on Ethereum network.
 
 ## Popcateum
-0xFAe46338A764BA3822f4Ff89A7F61a65aCE7297B
+0xa674048E5E255B581aaC66eaA6DCe07c54ECB5D6

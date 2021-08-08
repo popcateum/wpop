@@ -2,9 +2,9 @@
 pragma solidity ^0.8.5;
 
 import "./FungibleToken.sol";
-import "./interfaces/IPOP.sol";
+import "./interfaces/IWPOP.sol";
 
-contract WPOP is FungibleToken("Wrapped POP", "WPOP", "1"), IPOP {
+contract WPOP is FungibleToken("Wrapped POP", "WPOP", "1"), IWPOP {
 
     receive() external payable {
         deposit();
